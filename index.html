@@ -14,11 +14,18 @@
       <nav>
         <img class="logo" src="imgs/logo.svg" />
         <ul class="nav_menu">
-          <li>Features</li>
-          <li>Advantages</li>
-          <li>Gallery</li>
-          <li>Products</li>
+          <li><a class="bar" href="#feature">Features</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li class="products"><a href="#">Products</a>
+            <ul class="droplist">
+              <li><a href="#" target="_blank">Falcon 9</a></li>
+              <li><a href="#" target="_blank">Model S</a></li>
+              <li><a href="#" target="_blank">iPhone</a></li>
+            </ul> 
+          </li>         
         </ul>
+        
       </nav>
     </header>
     
@@ -37,14 +44,14 @@
       </article>
     </section>
     
-    <section class="feature">
+    <section id="feature" class="feature">
       <ul>
         <li>
           <img src="/imgs/icon1.svg"/>
           <h3>Amazing feature 1</h3>
           <p class="feat_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vestibulum quam, a porttitor sapien. Nunc condimentum, tortor id suscipit porta, metus nisl sodales erat.</p>
           <div class="feat_link">
-            <a><h3>Get it</h3></a>
+            <a href="#"><h3>Get it</h3></a>
           </div>
         </li>
         <li>
@@ -52,7 +59,7 @@
           <h3>Amazing feature 2</h3>
           <p class="feat_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a maximus tortor. Nulla ultrices urna.</p>
           <div class="feat_link">
-            <a><h3>Sell it</h3></a>
+            <a href="#"><h3>Sell it</h3></a>
           </div>
         </li>
         <li>
@@ -60,69 +67,91 @@
           <h3>Amazing feature 3</h3>
           <p class="feat_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada maximus est eu vulputate. Mauris sed venenatis nisi, ut porta.</p>
           <div class="feat_link">
-            <a><h3>Do it</h3></a>
+            <a href="#"><h3>Do it</h3></a>
           </div>
         </li>
       </ul>
     </section>
 
     <section class="cool">
-      <div class="cool_rect cool_text">
+      <div id="advantages" class="cool_text">
         <h2>Some cool text</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris metus. Maecenas faucibus in mauris in ultrices. Phasellus id justo id ante semper vulputate.</p>
       </div>      
-      <div class="cool_rect gradient">
+      <div class="gradient">
+        <div class="small_rect"> 
+          <h4>This looks cool</h4>
+          <p>Hover me if you like random animations</p>
+        </div>      
         <h2>Slick gradient</h2>
         <p>Lorem ipsum?</p>
       </div>      
-      <div class="cool_rect cats">
-        <img src="/imgs/gallery-images/tesla.jpg"/>
-        <img src="/imgs/gallery-images/procat.jpg" />
-        <img src="/imgs/gallery-images/hyperloop.jpg" />
-        <img src="/imgs/gallery-images/sneakycat.jpg" />
-        <img src="/imgs/gallery-images/bfr.jpeg" />
-        <img src="/imgs/gallery-images/funnycat.jpg" />
+      <div id="gallery" class="cats">
+        <div class="img_wrapper gallery_img1">
+          <h5>Our flagship car: The Model S</h5>
+          <img src="/imgs/gallery-images/tesla.jpg" alt="tesla"/>
+        </div>
+        <div class="img_wrapper gallery_img2">
+          <h5>Cool Cat</h5>
+          <img src="/imgs/gallery-images/procat.jpg" alt="cat"/>
+        </div>
+        <div class="img_wrapper gallery_img3">
+          <h5>Introducing: The Hyperloop</h5>
+          <img src="/imgs/gallery-images/hyperloop.jpg" alt="hyperloop"/>
+        </div>
+        <div class="img_wrapper gallery_img4">
+          <h5>So sneaky</h5>
+          <img src="/imgs/gallery-images/sneakycat.jpg" alt="cat"/>
+        </div>
+        <div class="img_wrapper gallery_img5">
+          <h5>BFR - Big Falcon Rocket</h5>
+          <img src="/imgs/gallery-images/falconrocket.jpeg" alt="rocket"/>
+        </div>
+        <div class="img_wrapper gallery_img6">
+          <h5>So much fun</h5>
+          <img src="/imgs/gallery-images/funnycat.jpg" alt="cat"/>
+        </div>
       </div>      
-      <div > 
-        <h4>This looks cool</h4>
-        <p>Hover me if you like random animations</p>
-      </div>      
+      
     </section>
 
-    <section>
+    <section class="form">
       <form>
-        <label>Register to our mailing list:</label>
-        <input type="email" />
-        <input type="checkbox" />
-        <label>Send me daily cat images</label>        
+        <label class="form_text" >Register to our mailing list:</label>
+        <input class="send" type="email" />
+        <button class="send btn" type="submit"></button>
+        <input class="checkbox" type="checkbox" />
+        <label class="form_text">Send me daily cat images</label>        
       </form>      
     </section>
 
     <footer>
-      <ul>
-        <li><a>About us</a></li>
-        <li><a>Privacy Policy</a></li>
-        <li><a>Legal notes</a></li>
-        <li><a>Copyright</a></li>
-      </ul>
-      <ul>
-        <li><a>About us</a></li>
-        <li><a>Privacy Policy</a></li>
-        <li><a>Legal notes</a></li>
-        <li><a>Copyright</a></li>
-      </ul>
-      <ul>
-        <li><a>About us</a></li>
-        <li><a>Privacy Policy</a></li>
-        <li><a>Legal notes</a></li>
-        <li><a>Copyright</a></li>
-      </ul>
-      <ul>
-        <li><a>About us</a></li>
-        <li><a>Privacy Policy</a></li>
-        <li><a>Legal notes</a></li>
-        <li><a>Copyright</a></li>
-      </ul>
+      <div class="wrapper">
+        <ul class="foot_column">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#"> Legal notes</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+        <ul class="foot_column">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Legal notes</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+        <ul class="foot_column">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Legal notes</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+        <ul class="foot_column">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Legal notes</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+      </div>  
     </footer>    
   </body>
 </html>

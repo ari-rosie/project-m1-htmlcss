@@ -1,0 +1,61 @@
+/*FEATURE SECTION*/
+
+.feature {
+    max-width: 100vw;
+
+}
+
+.feature ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+
+.feature ul li {
+    flex: 1;
+    margin: 30px;
+    box-shadow: var(--main-boxshadow);
+    text-align: center;
+    padding: 20px;
+    min-width: 150px;
+    min-height: 200px;
+    position: relative;
+}
+
+.feature h3 {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.feat_text {
+    color: var(--main-bkcolor);
+    opacity: 0.9;
+    line-height: 12px;
+    font-size: 0.6em;
+}
+
+
+.feat_link {
+    background-color: var(--main-bkcolor);
+    height: 15%;
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.feat_link a {
+    color: white;
+}
+
+.feat_link h3 {
+    padding: 10px;
+    font-weight: normal;
+}
+
+.feat_link:hover {
+    border: double lightblue 1px;
+}

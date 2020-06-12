@@ -1,0 +1,41 @@
+/*FORM SECTION*/
+
+.form {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+}
+
+.form_text {
+    font-size: 0.8em;
+}
+
+.checkbox {
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+
+.send {
+    padding: 0;
+    margin: 10px 0;
+    height: 25px;
+    border: var(--main-bkcolor) solid 1px;
+}
+
+.send.btn { /* button has height diff. of 2px to equal input*/
+    background-image: url("/imgs/send.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 40px;
+    border-radius: 0 4px 4px 0;
+    height: 27px;
+}

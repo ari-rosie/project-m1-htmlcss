@@ -1,0 +1,76 @@
+/* HEADER */
+
+header {
+    background-color: var(--main-bkcolor);
+    color: white;    
+       
+}
+
+nav {
+    width: 98.7vw;
+    display: flex;
+    max-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+        
+}
+
+nav a {
+    color: white;
+    padding-bottom: 11px;
+}
+
+
+.logo { 
+    max-height: 50px;
+    margin-left: 20px;   
+}
+
+/****DESKTOP*****/
+nav {
+    position: relative;
+
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.nav_menu li {
+    padding: 0 30px;
+}
+
+.nav_menu a:hover {
+    border-bottom: white solid 3px;
+}
+
+.droplist {
+    display: none;
+    position: absolute;
+    right:0px;
+    top:100%;
+    background-color: var(--main-bkcolor);
+    z-index: 3;
+}
+
+.droplist li {
+    padding: 10px 20px;
+    width: 100px;
+}
+
+.products:hover .droplist {
+    display: block;
+
+}
+
+.droplist li:hover {
+    background-color: black;
+}
+
+.droplist a:hover {
+    border: none;
+}
+/****************/
