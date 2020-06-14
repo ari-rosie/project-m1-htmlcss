@@ -12,24 +12,31 @@
   <body>
     <header>
       <nav>
-        <img class="logo" src="imgs/logo.svg" />
+        <a href="#intro"><img class="logo" src="imgs/logo.svg" /></a>
+        
+        
         <ul class="nav_menu">
-          <li><a class="bar" href="#feature">Features</a></li>
-          <li><a href="#advantages">Advantages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li class="products"><a href="#">Products</a>
+          
+          <!--MOBILE ONLY-->
+          <img class="mobile_menu" src="imgs/menu.svg" />
+          <!---->
+          
+          <a href="#feature"><li class="menu_item">Features</li></a>
+          <a href="#advantages"><li class="menu_item">Advantages</li></a>
+          <a href="#gallery"><li class="menu_item">Gallery</li></a>
+          <li class="products menu_item">Products
             <ul class="droplist">
               <li><a href="#" target="_blank">Falcon 9</a></li>
               <li><a href="#" target="_blank">Model S</a></li>
               <li><a href="#" target="_blank">iPhone</a></li>
             </ul> 
-          </li>         
+          </li>
         </ul>
         
       </nav>
     </header>
     
-    <section class="intro">
+    <section class="intro" id="intro">
       <article class="middle_container">
         <div>
           <h1>Introducing Falcon 9</h1>
@@ -87,27 +94,27 @@
         <p>Lorem ipsum?</p>
       </div>      
       <div id="gallery" class="cats">
-        <div class="img_wrapper gallery_img1">
+        <div class="img_wrapper">
           <h5>Our flagship car: The Model S</h5>
           <img src="/imgs/gallery-images/tesla.jpg" alt="tesla"/>
         </div>
-        <div class="img_wrapper gallery_img2">
+        <div class="img_wrapper">
           <h5>Cool Cat</h5>
           <img src="/imgs/gallery-images/procat.jpg" alt="cat"/>
         </div>
-        <div class="img_wrapper gallery_img3">
+        <div class="img_wrapper">
           <h5>Introducing: The Hyperloop</h5>
           <img src="/imgs/gallery-images/hyperloop.jpg" alt="hyperloop"/>
         </div>
-        <div class="img_wrapper gallery_img4">
+        <div class="img_wrapper">
           <h5>So sneaky</h5>
           <img src="/imgs/gallery-images/sneakycat.jpg" alt="cat"/>
         </div>
-        <div class="img_wrapper gallery_img5">
+        <div class="img_wrapper">
           <h5>BFR - Big Falcon Rocket</h5>
           <img src="/imgs/gallery-images/falconrocket.jpeg" alt="rocket"/>
         </div>
-        <div class="img_wrapper gallery_img6">
+        <div class="img_wrapper">
           <h5>So much fun</h5>
           <img src="/imgs/gallery-images/funnycat.jpg" alt="cat"/>
         </div>

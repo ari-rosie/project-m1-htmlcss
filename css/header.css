@@ -2,7 +2,9 @@
 
 header {
     background-color: var(--main-bkcolor);
-    color: white;    
+    color: white;
+    position: fixed;
+    z-index: 10;    
        
 }
 
@@ -17,60 +19,118 @@ nav {
 
 nav a {
     color: white;
-    padding-bottom: 11px;
 }
-
 
 .logo { 
     max-height: 50px;
-    margin-left: 20px;   
+    margin-left: 15px;
+}
+
+.logo:hover {
+    opacity: 0.7;
 }
 
 /****DESKTOP*****/
-nav {
-    position: relative;
 
-}
+@media only screen and (min-width: 768px){
+    nav {
+        position: relative;
+    
+    }
+    
+    .nav_menu {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+    
+    .nav_menu .menu_item {
+        margin-right: 20px;
+        padding: 15px 0;
+        border-bottom: var(--main-bkcolor) solid 3px;
+    }
+    
+    .nav_menu li:hover {
+        border-bottom: white solid 3px;
+    }
+    
+    .droplist {
+        display: none;
+        position: absolute;
+        right:0px;
+        top:100%;
+        background-color: var(--main-bkcolor);
+        z-index: 3;
+    }
+    
+    .droplist li {
+        padding: 10px;
+        width: 100px;
+    }
+    
+    .products {
+        cursor: pointer;
+    }
 
-.nav_menu {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-right: 20px;
-}
+    .products:hover .droplist {
+        display: block;
+    
+    }
+    
+    .droplist li:hover {
+        background-color: var(--lightgrey);
+        border: none;
 
-.nav_menu li {
-    padding: 0 30px;
-}
-
-.nav_menu a:hover {
-    border-bottom: white solid 3px;
-}
-
-.droplist {
-    display: none;
-    position: absolute;
-    right:0px;
-    top:100%;
-    background-color: var(--main-bkcolor);
-    z-index: 3;
-}
-
-.droplist li {
-    padding: 10px 20px;
-    width: 100px;
-}
-
-.products:hover .droplist {
-    display: block;
-
-}
-
-.droplist li:hover {
-    background-color: black;
-}
-
-.droplist a:hover {
-    border: none;
-}
+    }
+    
 /****************/
+
+.mobile_menu {
+    display: none;
+}
+    
+}
+
+
+/****** MOBILE*********/
+
+@media only screen and (max-width: 768px) {
+
+    .products {
+        display: none !important; 
+    }
+
+    .mobile_menu {
+        padding: 0 30px 30px 0;
+        cursor: pointer;
+        position: absolute;
+        top: -40px;
+        right: 0;
+    }
+
+    .nav_menu {
+        position: absolute;
+        top:100%;
+        background-color: var(--main-bkcolor);
+        width: 100vw;
+        display: block;
+    }
+    
+    .nav_menu li {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+    }
+
+
+     .nav_menu:hover li{
+        display: block;    
+    }
+
+    .nav_menu li:hover {
+        background-color: var(--lightgrey);
+
+    }
+}

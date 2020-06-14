@@ -20,6 +20,7 @@
     min-width: 150px;
     min-height: 200px;
     position: relative;
+    overflow: hidden;
 }
 
 .feature h3 {
@@ -29,33 +30,49 @@
 }
 
 .feat_text {
-    color: var(--main-bkcolor);
-    opacity: 0.9;
+    color: var(--lightgrey);
     line-height: 12px;
     font-size: 0.6em;
 }
 
 
 .feat_link {
-    background-color: var(--main-bkcolor);
     height: 15%;
     width: 90%;
     position: absolute;
     bottom: 20px;
-    left: 5%;
+    left: 4%;
     border-radius: 2px;
-    box-sizing: border-box;
+    padding: 1px 1px 0 1px;
+    border: solid 2px white;
+    
 }
 
 .feat_link a {
     color: white;
+    
 }
 
 .feat_link h3 {
     padding: 10px;
+    margin-top: 1px;    
+    background-color: var(--main-bkcolor);
     font-weight: normal;
+    
 }
 
 .feat_link:hover {
-    border: double lightblue 1px;
+    border: solid 2px rgb(100, 170, 200);
+}
+
+@media only screen and (max-width: 768px) {
+    .feature ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 50px;
+    }
+
+    .feature ul li {
+        width: 250px;
+    }
 }

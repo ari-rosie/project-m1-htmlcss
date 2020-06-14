@@ -13,37 +13,8 @@
     
 } 
 
-
-/****DESKTOP**** (H1 POSITION min 865px width)***/
-.middle_container div:nth-of-type(1) {
-    position: relative;
-}
-
-.intro h1 {
-    position: absolute;
-    top: 25%;
-    padding-left: 10px;
-}
-
-/********************************************/
-
 .intro h2 {
     padding-bottom: 20px;
-}
-
-
-.middle_container {
-    border: white 5px solid;
-    width: 85vw;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-}
-
-.middle_container div:nth-of-type(2) {
-    width: 55%; 
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
 }
 
 .textbox {
@@ -54,4 +25,77 @@
 
 .textbox p {
     padding: 0 10px;
+}
+
+/****DESKTOP**** (H1 POSITION min 865px width)***/
+@media only screen and (min-width: 865px){
+    .middle_container div:nth-of-type(1) {
+        position: relative;
+    }
+    
+    .intro h1 {
+        position: absolute;
+        top: 25%;
+        padding-left: 10px;
+    }
+
+    .middle_container {
+        border: white 5px solid;
+        width: 85vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    .middle_container div:nth-of-type(2) {
+        width: 55%; 
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 865px){
+    .middle_container {
+        border: white 5px solid;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    .middle_container div:nth-of-type(2) {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding-top: 20px;
+    }
+
+    .middle_container div:nth-of-type(1) {
+        padding: 20px;
+    }
+
+    .intro h2 {
+        margin: 0 25px;
+    }
+
+}
+/*****MOBILE*******************************/
+
+@media only screen and (max-width: 768px){
+    .intro div {
+        border-style: none;
+    }
+
+    .middle_container {
+        border-style: none;
+    }
+
+    .textbox {
+        flex-direction: column;
+    }
+
+    .textbox p:nth-of-type(1) {
+        margin-bottom: 10px;
+    }
 }

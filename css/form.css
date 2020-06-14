@@ -5,12 +5,14 @@
     height: 200px;
     justify-content: center;
     align-items: center;
+    color: var(--darkgrey);
 }
 
 .form form {
     display: flex;
     flex-wrap: wrap;
     width: 210px;
+    align-items: center;
 }
 
 .form_text {
@@ -22,12 +24,33 @@
     padding: 0;
 }
 
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border: solid 1px var(--darkgrey);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-image: url(/imgs/checkbox.svg);
+    background-position: center;
+    background-size: contain;
+    background-color: var(--darkgrey);
+    outline: none;
+
+}
 
 .send {
     padding: 0;
     margin: 10px 0;
     height: 25px;
-    border: var(--main-bkcolor) solid 1px;
+    border: var(--darkgrey) solid 1px;
 }
 
 .send.btn { /* button has height diff. of 2px to equal input*/
@@ -35,7 +58,11 @@
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
+    filter: brightness(0.8);
     width: 40px;
     border-radius: 0 4px 4px 0;
+    border-left-style: none;
     height: 27px;
+    cursor: pointer;
 }
+
